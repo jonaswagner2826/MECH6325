@@ -1,0 +1,456 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>MECH6325_FinalProject</title><meta name="generator" content="MATLAB 9.9"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2020-12-03"><meta name="DC.source" content="MECH6325_FinalProject.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeinput"><span class="comment">% MECH 6325 - Final Project</span>
+<span class="comment">%Jonas Wagner</span>
+<span class="comment">%2020-11-28</span>
+
+clear
+close <span class="string">all</span>;
+
+<span class="comment">% Problem 1 --------------------------------------------------------------</span>
+disp(<span class="string">'Problem 1 ---------------------------------------------------------'</span>)
+pblm1()
+
+clear
+<span class="comment">% Problem 2 --------------------------------------------------------------</span>
+disp(<span class="string">'Problem 2 ---------------------------------------------------------'</span>)
+pblm2()
+
+clear
+<span class="comment">% Problem 3 --------------------------------------------------------------</span>
+disp(<span class="string">'Problem 3 ---------------------------------------------------------'</span>)
+pblm3()
+
+clear
+<span class="comment">% Probelm 4 --------------------------------------------------------------</span>
+disp(<span class="string">'Problem 4 ---------------------------------------------------------'</span>)
+pblm4()
+
+clear
+<span class="comment">% Problem 5 -------------------------------------------------------------</span>
+disp(<span class="string">'Problem 5 ---------------------------------------------------------'</span>)
+pblm5()
+</pre><pre class="codeoutput">Problem 1 ---------------------------------------------------------
+If using the following F, there is a descrepancy for state 2
+
+F =
+
+    0.5000    2.0000
+         0         0
+
+
+P_minus_inf =
+
+   52.0974   -0.0000
+   -0.0000   10.0000
+
+
+k_inf =
+
+    0.8390
+   -0.0000
+
+
+P_plus_inf =
+
+    8.3896   -0.0000
+   -0.0000   10.0000
+
+
+P_plus_inf_std =
+
+   2.8965 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   3.1623 + 0.0000i
+
+There is a decrepancy for the secound state.
+This is belived to be becouse of the constant input not = 0,
+so the steady-state Kalman filter for that state is not as accurate.
+---------------------------------------------------------------
+The alternative method of simulation:
+
+F =
+
+    0.5000    2.0000
+         0    1.0000
+
+
+G =
+
+     0
+     0
+
+
+P_minus_inf =
+
+   73.4314   28.8845
+   28.8845   23.5767
+
+
+k_inf =
+
+    0.8801
+    0.3462
+
+
+P_plus_inf =
+
+    8.8014    3.4621
+    3.4621   13.5767
+
+
+P_plus_inf_std =
+
+    2.9667    1.8607
+    1.8607    3.6847
+
+The alternative method has no descrepancy
+Problem 2 ---------------------------------------------------------
+Discretized System:
+
+F =
+
+    0.9930    0.0997
+   -0.0997    0.9950
+
+
+G =
+
+    0.0060
+    0.0998
+
+
+H =
+
+     1     0
+     0     1
+
+
+Q =
+
+    0.9000
+
+
+L =
+
+    0.0060
+    0.0998
+
+Standard diviations of errors
+
+Y_error_std =
+
+    1.0568
+
+
+X_hat_error_std =
+
+    0.9043
+
+Problem 3 ---------------------------------------------------------
+Part a -----------------
+
+P_ss_a =
+
+    2.3868    0.2774
+    0.2774    4.2188
+
+
+P_ss_a_care =
+
+    2.3868    0.2774
+    0.2774    4.2188
+
+Part b -----------------
+
+P_ss_b =
+
+    0.2899    0.5798
+    0.5798    1.1596
+
+
+P_ss_b_care =
+
+    0.2899    0.5798
+    0.5798    1.1596
+
+Part c -----------------
+
+P_ss_c =
+
+    2.2899    0.5798
+    0.5798    3.1596
+
+
+P_ss_c_care =
+
+    2.2899    0.5798
+    0.5798    3.1596
+
+Part d -----------------
+
+P_ss_d =
+
+    0.6899    1.3798
+    1.3798    2.7596
+
+
+P_ss_d_care =
+
+    2.2899    0.5798
+    0.5798    3.1596
+
+
+K_int =
+
+    0.6899    1.3798
+    1.3798    2.7596
+
+
+A_KC_int =
+
+    0.3101   -1.3798
+   -1.3798   -1.7596
+
+
+eig_int =
+
+   -2.4495
+    1.0000
+
+This is an unstable observer, so it does not result in asteady-state Kalman Filter
+Problem 4 ---------------------------------------------------------
+
+sys =
+ 
+  A = 
+          x1     x2
+   x1      0      1
+   x2    -36  -1.92
+ 
+  B = 
+       u1
+   x1   0
+   x2   1
+ 
+  C = 
+       x1  x2
+   y1   1   0
+   y2   0   1
+ 
+  D = 
+       u1
+   y1   0
+   y2   0
+ 
+Continuous-time state-space model.
+
+
+dt_sys =
+ 
+  A = 
+           x1      x2
+   x1  0.7517   0.101
+   x2  -3.636  0.5578
+ 
+  B = 
+             u1
+   x1  0.006896
+   x2     0.101
+ 
+  C = 
+       x1  x2
+   y1   1   0
+ 
+  D = 
+       u1
+   y1   0
+ 
+Sample time: 0.125 seconds
+Discrete-time state-space model.
+
+Problem 5 ---------------------------------------------------------
+Part a ----------------------------
+ 
+x_dot_sym =
+ 
+                        r_dot
+w + r*theta_dot^2 - (G*M)/r^2
+                    theta_dot
+       -(2*r_dot*theta_dot)/r
+ 
+Part b ---------------------------
+ 
+eq =
+ 
+0 == r*theta_dot^2 - (G*M)/r^2
+ 
+ 
+theta_dot_sym =
+ 
+ (G^(1/2)*M^(1/2))/r^(3/2)
+-(G^(1/2)*M^(1/2))/r^(3/2)
+ 
+Part c ----------------------------
+ 
+A =
+ 
+[                        0,                1, 0,             0]
+[omega_0^2 + (2*G*M)/r_0^3,                0, 0, 2*omega_0*r_0]
+[                        0,                0, 0,             1]
+[                        0, -(2*omega_0)/r_0, 0,             0]
+ 
+ 
+L =
+ 
+0
+1
+0
+0
+ 
+
+omega_0_const =
+
+    0.0012
+
+
+v_const =
+
+   7.7940e+03
+
+
+A_const =
+
+   1.0e+04 *
+
+         0    0.0001         0         0
+    0.0000         0         0    1.5588
+         0         0         0    0.0001
+         0   -0.0000         0         0
+
+
+eig_A =
+
+   0.0000 + 0.0000i
+   0.0000 + 0.0012i
+   0.0000 - 0.0012i
+   0.0000 + 0.0000i
+
+
+tau =
+
+   5.2964e+03
+
+
+min_int_step =
+
+  529.6442
+
+Part d ---------------------------------
+The performance of the linear Kalman Filter is reduced by the lack of 
+linearity in the actual system dynamics. This may be improved with faster
+measurments and Kalman Filter updates; however this is not gaurenteed.
+Part e --------------------------------
+As is clear between the two estimate error plots, the Extended Kalman Filter 
+has a lot less error then the Linear one.This is very evident from the order 
+of magnitude on each of the plots.
+</pre><img vspace="5" hspace="5" src="MECH6325_FinalProject_01.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_02.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_03.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_04.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_05.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_06.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_07.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_08.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_09.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_10.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_11.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_12.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_13.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_14.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_15.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_16.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_17.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_18.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_19.png" alt=""> <img vspace="5" hspace="5" src="MECH6325_FinalProject_20.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2020b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+% MECH 6325 - Final Project
+%Jonas Wagner
+%2020-11-28
+
+clear
+close all;
+
+% Problem 1 REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH
+disp('Problem 1 REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-')
+pblm1()
+
+clear
+% Problem 2 REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH
+disp('Problem 2 REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-')
+pblm2()
+
+clear
+% Problem 3 REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH
+disp('Problem 3 REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-')
+pblm3()
+
+clear
+% Probelm 4 REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH
+disp('Problem 4 REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-')
+pblm4()
+
+clear
+% Problem 5 REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-
+disp('Problem 5 REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-')
+pblm5()
+##### SOURCE END #####
+--></body></html>

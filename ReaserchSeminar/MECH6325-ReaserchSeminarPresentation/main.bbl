@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{SecureStateEstimation}
+M.~H. {Basiri}, J.~G. {Thistle}, J.~W. {Simpson-Porco}, and S.~{Fischmeister}.
+\newblock Kalman filter based secure state estimation and individual attacked
+  sensor detection in cyber-physical systems.
+\newblock In {\em 2019 American Control Conference (ACC)}, pages 3841--3848,
+  2019.
+
+\bibitem{CyberPhysicalAttacksOnPowerNetworks}
+F.~{Pasqualetti}, F.~{Dörfler}, and F.~{Bullo}.
+\newblock Cyber-physical attacks in power networks: Models, fundamental
+  limitations and monitor design.
+\newblock In {\em 2011 50th IEEE Conference on Decision and Control and
+  European Control Conference}, pages 2195--2201, 2011.
+
+\bibitem{Imhotep_SMT}
+Y.~{Shoukry}, P.~{Nuzzo}, A.~{Puggelli}, A.~L. {Sangiovanni-Vincentelli}, S.~A.
+  {Seshia}, and P.~{Tabuada}.
+\newblock Secure state estimation for cyber-physical systems under sensor
+  attacks: A satisfiability modulo theory approach.
+\newblock {\em IEEE Transactions on Automatic Control}, 62(10):4917--4932,
+  2017.
+
+\end{thebibliography}
